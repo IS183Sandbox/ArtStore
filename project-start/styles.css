@@ -1,0 +1,112 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+p.cookie {
+  font-family: 'Cookie', cursive;
+  font-size: 2em !important;
+}
+
+/* home page */
+.home-container {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  background-color: #FFF;
+  overflow: auto;
+  height: 100%;
+}
+
+.r1 {
+  background-image: url('./img/david.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  max-height: 550px;
+}
+
+.home-nav,
+.featured-card {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 2em;
+  height: 100%;
+  max-width:1200px
+}
+
+.home-nav>ul {}
+
+.home-nav>ul>li {
+  display: inline-block;
+}
+
+.home-nav>ul>li:first-child a {
+  font-size: 2em;
+}
+
+.home-nav>ul>li:first-child a:hover {
+  background-color: transparent;
+  color: #1959d1;
+}
+
+.home-nav>ul>li>a {
+  list-style-type: none;
+  text-decoration: none;
+  padding: .5em;
+  font-size: 1.5rem;
+  color: #FFF;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+}
+
+.home-nav>ul>li>a:hover {
+  background-color: #FFF;
+  color: red;
+}
+
+.featured-text {
+  text-align: center;
+  margin: 15% 0 5%;
+}
+
+.featured-text p {
+  font-size: 1.5em;
+  color: #FFF;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+
+}
+
+.featured-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  grid-column-gap: 2em;
+  padding-bottom: 3em;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.card-single {
+  text-align: center;
+}
+
+.card-single p {
+  text-align: left;
+}
+
+.card-single h3 {
+  padding: 1em 0em 0em;
+}
+
+small p {
+  font-size: .9em;
+}
+
+/* end home page */
